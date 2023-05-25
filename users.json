@@ -1,0 +1,17 @@
+{
+    "people": [
+
+        {
+            "name": "Jegadit",
+            "phone": "4444444444",
+            "email": "j@g.com",
+            "password": "Password@123"
+        },
+        {
+            "name": "Test",
+            "phone": "1111111111",
+            "email": "t@s.com",
+            "password": "testpass"
+        }
+    ]
+}
