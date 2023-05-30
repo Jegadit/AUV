@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: #e1e1e1;
+        }
+        
+        .pdiv{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .c1{
+            margin-top:6%;
+            margin-left: 3%;
+        }
+
+        .c2{
+            margin-top:10%;
+            margin-left: 35%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        input[type="hidden"] {
+            display: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-bottom: 50px;
+            width: 100px;
+            height: 80px;
+            border-radius: 10px;
+        }
+
+        .arrow-row {
+            display: flex;
+            margin-left: 50px;
+        }
+
+        .arrow-row button {
+            margin-right: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="pdiv">
+        <!-- <div class="c1">
+            <iframe src="http://192.168.197.76:8080/video" height="473px" width="840px" frameborder="1" allowfullscreen></iframe>
+        </div> -->
+        <div class="c2">
+            <form method="post" action="">
+                <div class="arrow-row">
+                    <button type="submit" id="up-arrow" name="direction" value="forward">Forward</button>
+                </div>
+                <div class="arrow-row">
+                    <button type="submit" id="left-arrow" name="direction" value="l">Left</button>
+                    <button type="submit" id="stop-arrow" name="direction" value="s">Stop</button>
+                    <button type="submit" id="right-arrow" name="direction" value="r">Right</button>
+                </div>
+                <div class="arrow-row">
+                    <button type="submit" id="down-arrow" name="direction" value="b">Back</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function () {
+            parent.arrowFrame.focus();
+        };
+
+        const upButton = document.getElementById('up-arrow');
+        const downButton = document.getElementById('down-arrow');
+        const leftButton = document.getElementById('left-arrow');
+        const rightButton = document.getElementById('right-arrow');
+        const stopButton = document.getElementById('stop-arrow');
+
+        function resetButtonColor(button) {
+            button.style.background = '';
+        }
+
+        function handleDirection(direction) {
+            console.log('Pressed direction:', direction);
+            // Perform additional actions if needed
+
+            // Submit the form with the direction value
+            const form = document.querySelector('form');
+            const directionInput = document.createElement('input');
+            directionInput.type = 'hidden';
+            directionInput.name = 'direction';
+            directionInput.value = direction;
+            form.appendChild(directionInput);
+            form.submit();
+        }
+
+        function handleKeyPress(event) {
+            const key = event.key;
+            let direction = '';
+
+            if (key === 'ArrowUp') {
+                direction = 'f';
+                upButton.style.background = 'red';
+            } else if (key === 'ArrowDown') {
+                direction = 'b';
+                downButton.style.background = 'blue';
+            } else if (key === 'ArrowLeft') {
+                direction = 'l';
+                leftButton.style.background = 'green';
+            } else if (key === 'ArrowRight') {
+                direction = 'r';
+                rightButton.style.background = 'yellow';
+            } else if (key === ' ') { // Spacebar
+                direction = 's';
+                stopButton.style.background = 'orange';
+            }
+
+            if (direction) {
+                handleDirection(direction);
+            }
+        }
+
+        function handleKeyRelease(event) {
+            const key = event.key;
+
+            if (key === 'ArrowUp') {
+                resetButtonColor(upButton);
+            } else if (key === 'ArrowDown') {
+                resetButtonColor(downButton);
+            } else if (key === 'ArrowLeft') {
+                resetButtonColor(leftButton);
+            } else if (key === 'ArrowRight') {
+                resetButtonColor(rightButton);
+            } else if (key === ' ') { // Spacebar
+                resetButtonColor(stopButton);
+            }
+        }
+
+        // Event listeners for keydown and keyup events
+        document.addEventListener('keydown', handleKeyPress);
+        document.addEventListener('keyup', handleKeyRelease);
+
+        // Button click event handlers
+        upButton.addEventListener('click', function () {
+            handleDirection('f');
+        });
+
+        downButton.addEventListener('click', function () {
+            handleDirection('b');
+        });
+
+        leftButton.addEventListener('click', function () {
+            handleDirection('l');
+        });
+
+        rightButton.addEventListener('click', function () {
+            handleDirection('r');
+        });
+
+        stopButton.addEventListener('click', function () {
+            handleDirection('s');
+        });
+
+    </script>
+</body>
+
+</html>

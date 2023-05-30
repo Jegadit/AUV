@@ -82,6 +82,8 @@
         </div>
         <div class="column-xs-12 column-md-2">
           <ul type="none">
+            <li><a href="/IOT">Refresh</a></li>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <li><a href="/user">Back</a></li>
           </ul>
         </div>
@@ -114,33 +116,33 @@
 
                 <thead class="thead-light">
                   <tr>
-                    <th>
+                    <!-- <th>
                       <input type="text" class="search-input" placeholder="ID" style="width: 120px;">
-                    </th>
+                    </th> -->
                     <th>
                       <input type="text" class="search-input" placeholder="Time Stamp" style="width: 150px;">
                     </th>
                     <th>
-                      <input type="text" class="search-input" placeholder="Coordinates" style="width: 130px;">
+                      <input type="text" class="search-input" placeholder="Internal_Temperature °C" style="width: 200px;">
                     </th>
                     <th>
-                      <input type="text" class="search-input" placeholder="Temperature" style="width: 130px;">
+                      <input type="text" class="search-input" placeholder="External_Temperature °C" style="width: 200px;">
                     </th>
                     <th>
-                      <input type="text" class="search-input" placeholder="Preassure" style="width: 130px;">
+                      <input type="text" class="search-input" placeholder="Pressure (hPa)" style="width: 130px;">
                     </th>
-                    <th>
+                    <!-- <th>
                       <input type="text" class="search-input" placeholder="PH" style="width: 130px;">
                     </th>
                     <th>
                       <input type="text" class="search-input" placeholder="Turbidity" style="width: 130px;">
-                    </th>
+                    </th> -->
                   </tr>
                 </thead>
 
                 <tbody class="body-half-screen">
 
-                  <tr>
+                  <!-- <tr>
                     <td style="text-align: center;">
                       1
                     </td>
@@ -198,43 +200,27 @@
                     <td style="text-align: center;">
                       250
                     </td>
-                  </tr>
+                  </tr> -->
 
-                  <!-- {% for i in range(sizeofresult) %}
+                  {% for x in data %}
                   <tr>
                     <td>
-                      {{finalresult[i][1]}}
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{x['payload']['timestamp']}}
                     </td>
-
-                    <td id="main">
-                      {{finalresult[i][0]}}
+                    
+                    <td>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{x['payload']['internal_temperature']}}
                     </td>
 
                     <td>
-                      {% for j in range(phoneSize) %}
-                      {% if unique[i] == phone[j][0] %}
-                      {{phone[j][1]}} <br />
-                      {% endif %}
-                      {% endfor %}
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{x['payload']['external_temperature']}}
                     </td>
 
                     <td>
-                      {{finalresult[i][2]}}
-                    </td>
-
-                    <td>
-                      {{finalresult[i][2]}}
-                    </td>
-
-                    <td>
-                      {{finalresult[i][2]}}
-                    </td>
-
-                    <td>
-                      {{finalresult[i][3]}},<br>{{finalresult[i][4]}},<br>{{finalresult[i][5]}}
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{x['payload']['pressure']}}
                     </td>
                   </tr>
-                  {% endfor %} -->
+                  {% endfor %}
 
                 </tbody>
               </table>
