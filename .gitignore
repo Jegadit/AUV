@@ -158,3 +158,9 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+# session = boto3.session.Session(
+#     aws_access_key_id='ASIA4XEFNQPVHKAYFOFS',
+#     aws_secret_access_key='I3Q+8GqoWho73jd6zCKI1MaoVelyRK/xUiTwhZsa',
+#     aws_session_token='FwoGZXIvYXdzEGUaDPLFhvzvIUqc5M7dYyLEAb9uE004nmQM/ekbaGB7uGmxj8E2bUPPv2o9sybXIMfAXJGUUfUGXIYVHr+Py5eahz5oDJOlzRrQFWPLXTRJhJFPNmO9RM4WTo2JfMqptAIMvfUeolIjkS4fHE8K5GfIlHz/fDLy89Z82K5UwHnOrvsk/SW7EvoJQbZGXrW+Mcg6sNyw7k/2UPZd9fc5vSxLI6uJHxD7i+tUmB8mqkiC0u85xMv0RK4l0fphojX7tkHBPoS2R1W6M1sRNbu6K9l4O1kkkNsorsXXowYyLVMuYBQM/Ubww27+ey9b1thxLPVXyK5D2HEzlXKFPaIu+Sy8p/do05ftU7TcUQ=='
+# )
