@@ -4,9 +4,9 @@ from flask import Flask, render_template, redirect, url_for, request, jsonify
 from flask import session as FlaskSession
 from textwrap import indent
 import urllib.request
-import boto3
-from botocore.config import Config
-from boto3.dynamodb.conditions import Key, Attr
+# import boto3
+# from botocore.config import Config
+# from boto3.dynamodb.conditions import Key, Attr
 
 
 ############################################### AWS# ###################################################
