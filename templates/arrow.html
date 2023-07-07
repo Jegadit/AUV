@@ -18,7 +18,7 @@
         }
 
         .c2{
-            margin-top:10%;
+            margin-top:3%;
             margin-left: 35%;
         }
 
@@ -63,6 +63,9 @@
         <div class="c2">
             <form method="post" action="">
                 <div class="arrow-row">
+                    <button type="submit" id="above-arrow" name="direction" value="a">Up</button>
+                </div>
+                <div class="arrow-row">
                     <button type="submit" id="up-arrow" name="direction" value="forward">Forward</button>
                 </div>
                 <div class="arrow-row">
@@ -72,6 +75,9 @@
                 </div>
                 <div class="arrow-row">
                     <button type="submit" id="down-arrow" name="direction" value="b">Back</button>
+                </div>
+                <div class="arrow-row">
+                    <button type="submit" id="under-arrow" name="direction" value="d">Down</button>
                 </div>
             </form>
         </div>
@@ -87,6 +93,8 @@
         const leftButton = document.getElementById('left-arrow');
         const rightButton = document.getElementById('right-arrow');
         const stopButton = document.getElementById('stop-arrow');
+        const aboveButton = document.getElementById('above-arrow');
+        const underButton = document.getElementById('under-arrow');
 
         function resetButtonColor(button) {
             button.style.background = '';
@@ -125,7 +133,14 @@
             } else if (key === ' ') { // Spacebar
                 direction = 's';
                 stopButton.style.background = 'orange';
+            } else if (key === 'a') { // Spacebar
+                direction = 'a';
+                aboveButton.style.background = 'orange';
+            } else if (key === 'd') { // Spacebar
+                direction = 'd';
+                underButton.style.background = 'orange';
             }
+            
 
             if (direction) {
                 handleDirection(direction);
@@ -145,6 +160,10 @@
                 resetButtonColor(rightButton);
             } else if (key === ' ') { // Spacebar
                 resetButtonColor(stopButton);
+            } else if (key === 'a') { 
+                resetButtonColor(aboveButton);
+            } else if (key === 'd') {
+                resetButtonColor(underButton);
             }
         }
 
@@ -171,6 +190,14 @@
 
         stopButton.addEventListener('click', function () {
             handleDirection('s');
+        });
+
+        stopButton.addEventListener('click', function () {
+            handleDirection('a');
+        });
+
+        stopButton.addEventListener('click', function () {
+            handleDirection('d');
         });
 
     </script>

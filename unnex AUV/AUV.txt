@@ -1,0 +1,29 @@
+propulsion:
+
+Ultrasonic motor is an actuator driven by ultrasonic vibration, which has the characteristics of low electromagnetic interference, low noise, light weight and compact structure.
+
+https://ieeexplore.ieee.org/document/9019237/figures#figures
+
+ high-speed Direct Drive PMSM motors combined with B-series propellers--63% effective
+
+Inline Thrusters
+ Lian 130e thruster -- highly efficient
+ 
+AUV design:
+
+https://www.bing.com/ck/a?!&&p=a7b82bc836788246JmltdHM9MTY4MzQxNzYwMCZpZ3VpZD0yYjc4ODk3MS00YzFiLTZjZjktMWFiMi05YTdiNGRjOTZkYWMmaW5zaWQ9NTI3NA&ptn=3&hsh=3&fclid=2b788971-4c1b-6cf9-1ab2-9a7b4dc96dac&psq=new+thruster+design+for+auv+buleprints&u=a1aHR0cDovL25vcHIubmlzY3ByLnJlcy5pbi9iaXRzdHJlYW0vMTIzNDU2Nzg5LzQ4ODU4LzMvSUpNUyUyMDQ4JTI4NyUyOSUyMDEwODEtMTA5MC5wZGY&ntb=1
+
+
+AUV--the Guanay II--material fiber glass
+
+MAIN THRUSTER: 300-W nominal power thruster (a Seaeye SI-MCT01-B)
+LATERAL THRUSTER: Seabotix BTD150
+
+Thruster image: https://www.mdpi.com/sensors/sensors-18-01241/article_deploy/html/images/sensors-18-01241-g005-550.jpg
+
+IMPORTANT RESEARCH PAPER FOR AUV: https://www.mdpi.com/1424-8220/18/4/1241
+
+A NOVEL DUAL-ROTOR ULTRASONIC MOTOR APPLIED FOR 
+UNDERWATER PROPULSION
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9019237&tag=1
+
