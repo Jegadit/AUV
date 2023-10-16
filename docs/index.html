@@ -7,6 +7,84 @@
     <title>DWMC</title>
     <link rel="stylesheet" href="./style/tailwind-WRYBPUUD.css">
     <link rel="stylesheet" href="./style/fonts-JGT7OXMC.css">
+    <style>
+        
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    margin: 0 30px;
+}
+
+.profile-card {
+    flex: 1 1 30%;
+    max-width: 300px;
+    background: #fff;
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0 0 2px 0 #ccc;
+    transition: .3s;
+}
+
+.profile-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px -5px #ccc;
+}
+
+.profile-icon {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 25px 0 10px 0;
+}
+
+.profile-position {
+    font-size: 14px;
+    color: #777;
+}
+
+.button {
+    margin: 40px 0 0 0;
+    padding: 10px 30px;
+    color: #999;
+    text-decoration: none;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+.button:hover {
+    color: #fff;
+    background: #748dff;
+    border: 1px solid #748dff;
+}
+
+@media screen and (max-width: 1000px) {
+    .profile-name {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .profile-card {
+        padding: 20px 15px;
+    }
+
+    .profile-name {
+        font-size: 16px;
+    }
+}
+    </style>
+</head>
 
 <body><span data-radix-focus-guard="" tabindex="0"
         style="outline: none; opacity: 0; position: fixed; pointer-events: none;"></span><noscript></noscript>
@@ -14,7 +92,7 @@
 
         <header class="">
             <div class="flex items-center overflow-hidden relative py-48 min-h-screen text-white">
-                <div class="absolute inset-0 z-[-10]"><img src="https://raw.githubusercontent.com/RulerOfEternalNight/AUV/main/docs/res/head-f.png" alt="AUV">
+                <div class="absolute inset-0 z-[-10]"><img src="../res/head-f.png" alt="AUV">
                     <div class="bg-black inset-0 absolute" style="opacity: 0.3;"></div>
                 </div>
                 <div class="px-4 md:px-12 w-full mx-auto max-w-[1256px]">
@@ -70,9 +148,7 @@
                                     style="transform: translateY(-70px) translateZ(0px);">
                                     <div style="opacity: 1; transform: none;">
                                         <h4 class="leading-none md:leading-none text-3xl md:text-4xl font-medium   ">
-                                            <br><br>We
-                                            focus on creating
-                                            positive change for planet and people
+                                            <br><br>About Us
                                         </h4>
                                     </div>
                                     <div style="opacity: 1; transform: none;">
@@ -80,7 +156,7 @@
                                         </p>
                                     </div>
                                     <div style="opacity: 1; transform: none;"><a class="!no-underline "
-                                            href="https://lightyear.one/impact"><span
+                                            href="#AboutUs"><span
                                                 class="leading-[1.5] text-base   inline hover:text-[#FF5C39] group-hover:text-[#FF5C39] transition-colors duration-200 font-medium">Path
                                                 Finding Algorithm<span class="text-[#FF5C39] font-arrow ml-1.5 inline-block"
                                                     style="opacity: 1;">&gt;</span></span></a></div>
@@ -106,12 +182,11 @@
                                     style="transform: translateY(-70px) translateZ(0px);">
                                     <div style="opacity: 1; transform: none;">
                                         <h4 class="leading-none md:leading-none text-3xl md:text-4xl font-medium   ">
-                                            <br><br>Good for the planet,
-                                            good for you.
+                                            <br><br>Why do we do this?
                                         </h4>
                                     </div>
                                     <div style="opacity: 1; transform: none;">
-                                        <p class="leading-[1.5] text-base   ">We’re on a mission to bring clean mobility
+                                        <p class="leading-[1.5] text-base   ">We're on a mission to bring clean mobility
                                             to the world by
                                             developing scalable solar electric vehicles.</p>
                                     </div>
@@ -170,7 +245,7 @@
                         class="col-span-4  md:col-span-3  lg:col-span-4  row-start-2 md:row-start-1 lg:row-start-1 flex flex-col">
                         <div class="border-line-gray pt-2 pb-2 undefined undefined undefined undefined  ">
                             <h5 class="leading-[1.2] text-[26px] md:text-[28px] font-medium undefined undefined whitespace-pre-line"
-                                _uid="d529dd64-0c0d-4301-8880-103384096115">Cutting-edge solar modules</h5>
+                                _uid="d529dd64-0c0d-4301-8880-103384096115">What we do&nbsp;</h5>
                         </div>
                         <p class="leading-[1.5] text-base undefined undefined whitespace-pre-line"
                             _uid="49b26fb9-bcc6-4ed8-bb18-179044d46a11">By harnessing the power of the sun, our
@@ -196,20 +271,47 @@
             </div>
         </div>
 
-        <section class="relative  py-20 md:py-24 lg:py-32 undefined " id="" _uid="4c6a16fd-6c0c-4ed7-8b6c-78a191276268"
+        <section class="relative  py-20 md:py-24 lg:py-32 undefined " id="AboutUs" _uid="4c6a16fd-6c0c-4ed7-8b6c-78a191276268"
             data-testid="">
             <div class="undefined undefined flex flex-col min-h-full undefined undefined  "
                 _uid="6b192c1f-e3f4-4ba4-a92f-9b29452f1ce1" internalsearchtags="">
                 <div class="px-4 md:px-12 w-full mx-auto max-w-[1256px]">
                     <div class="pb-10 flex justify-between items-end">
                         <h3 class="leading-none md:leading-none text-4xl md:text-[40px] font-medium   "> Latest news
-                        </h3><a class="!no-underline hidden md:inline" href="https://lightyear.one/news"><span
+                        </h3><!-- <a class="!no-underline hidden md:inline" href="https://lightyear.one/news"><span
                                 class="leading-[1.5] text-base   inline hover:text-[#FF5C39] group-hover:text-[#FF5C39] transition-colors duration-200 font-medium">All
                                 news<span class="text-[#FF5C39] font-arrow ml-1.5 inline-block"
-                                    style="opacity: 1;">&gt;</span></span></a>
+                                    style="opacity: 1;">&gt;</span></span></a> -->
                     </div>
                 </div>
-                <div class="w-full overflow-hidden relative flex">
+                <br>
+                <div class="profile-container">
+                    <div class="profile-card">
+                      <img src="https://i.imgur.com/bZBG9PE.jpg" alt="image1" class="profile-icon" />
+                      <div class="profile-name">Jegadit S Saravanan</div>
+                      <div class="profile-position">Founder of Deep Water Marine Club (DWMC), <br> Robotics Engineer & ML/DL Researcher</div>
+                      <a href="#" class="button">Connect</a>
+                    </div>
+                    <div class="profile-card">
+                      <img src="https://i.imgur.com/bZBG9PE.jpg" alt="image1" class="profile-icon" />
+                      <div class="profile-name">Nithish U S R</div>
+                      <div class="profile-position">Web Designer</div>
+                      <a href="#" class="button">Connect</a>
+                    </div>
+                    <div class="profile-card">
+                      <img src="https://i.imgur.com/S4GNFIW.jpg" alt="image2" class="profile-icon" />
+                      <div class="profile-name">Giri Prasath R</div>
+                      <div class="profile-position">Web Developer</div>
+                      <a href="#" class="button">Connect</a>
+                    </div>
+                    <div class="profile-card">
+                      <img src="https://i.imgur.com/cMSVQZC.jpg" alt="image3" class="profile-icon" />
+                      <div class="profile-name">Balaji B</div>
+                      <div class="profile-position">DevOps</div>
+                      <a href="#" class="button">Connect</a>
+                    </div>
+                  </div>
+                <!-- <div class="w-full overflow-hidden relative flex">
                     <div class="px-4 md:px-12 w-full mx-auto max-w-[1256px]">
                         <div class="">
                             <div class="relative h-auto" style="transform: none;">
@@ -300,7 +402,7 @@
                     <div class="z-10 absolute left-0 h-full md:w-24 lg:w-32 xl:w-48" style="cursor: auto;"></div>
                     <div class="z-10 absolute right-0 h-full md:w-24 lg:w-32 xl:w-48"
                         style="cursor: url(&quot;/images/right-cursor.svg&quot;) 50 50, pointer;"></div>
-                </div>
+                </div> -->
             </div>
         </section>
         <div class="w-full text-xl bg-dark-gray py-12 md:py-20 lg:py-32">
